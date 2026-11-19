@@ -1,9 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Environment & secrets
 .venv/
 .env
 
-data/*
-!data/*/.gitkeep
-!data/*/*/.gitkeep
+# Data: ignore contents, keep folder structure + README
+data/**
+!data/**/
+!data/README.md
+!data/**/.gitkeep
 
-models/*
+# Models: ignore contents, keep folder
+models/**
+!models/**/
 !models/.gitkeep
+
+# macOS
+.DS_Store
